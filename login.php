@@ -1,4 +1,4 @@
-<?php
+<?php 
 // Connect to database
 $servername = " sql311.epizy.com ";
 $username = "epiz_33999353";
@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 $email = $_POST['email'];
 $userpass = $_POST['userpass'];
 
-$sql = "SELECT * FROM userdetails WHERE email = '$email' AND userpass = '$userpass';
+$sql = "SELECT * FROM users WHERE email = '$email' AND userpass = '$userpass';
 ";
 
 if ($conn->query($sql) === TRUE) {
