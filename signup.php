@@ -1,9 +1,9 @@
 <?php 
 // Connect to database
-$servername = "sql311.epizy.com";
-$username = "epiz_33999353";
-$password = "H4MAJzdD7n78jB";
-$dbname = "epiz_33999353_letsbowl";
+$servername = "mysql://root:zKp0KcAr8vaIt7l9eddk@containers-us-west-4.railway.app:6737";
+$username = "root";
+$password = "zKp0KcAr8vaIt7l9eddk";
+$dbname = "railway";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
