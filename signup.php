@@ -1,8 +1,8 @@
 <?php 
 // Connect to database
-$servername = " sql311.epizy.com ";
+$servername = "sql311.epizy.com";
 $username = "epiz_33999353";
-$password = " H4MAJzdD7n78jB ";
+$password = "H4MAJzdD7n78jB";
 $dbname = "epiz_33999353_letsbowl";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 $email = $_POST['email'];
 $userpass = $_POST['userpass'];
 
-$sql = "INSERT INTO users (id,email,userpass,timestamp) VALUES (NULL,'$email','$userpass',timestamp());";
+$sql = "INSERT INTO users (id,email,userpass,timestamp) VALUES (NULL,'email','userpass',timestamp());";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";

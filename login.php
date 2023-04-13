@@ -1,8 +1,8 @@
 <?php 
 // Connect to database
-$servername = " sql311.epizy.com ";
+$servername = "sql311.epizy.com";
 $username = "epiz_33999353";
-$password = " H4MAJzdD7n78jB ";
+$password = "H4MAJzdD7n78jB";
 $dbname = "epiz_33999353_letsbowl";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -16,8 +16,7 @@ if ($conn->connect_error) {
 $email = $_POST['email'];
 $userpass = $_POST['userpass'];
 
-$sql = "SELECT * FROM users WHERE email = '$email' AND userpass = '$userpass';
-";
+$sql = "SELECT * FROM users WHERE email = 'email' AND userpass = 'userpass';";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -25,8 +24,6 @@ if ($conn->query($sql) === TRUE) {
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
-mkdir .profile;
-copy .profile/profile.js 
 $conn->close();
-header("Location: ./profile.html");
+header("Location: ./index.html");
 ?>
